@@ -9,7 +9,9 @@ public class Matches {
         boolean turn = true;
         int count = 11;
         while (count > 0) {
-            String player = turn ? "Первый игрок" : "Второй игрок";
+            String player = turn
+                    ? "Первый игрок"
+                    : "Второй игрок";
             System.out.println(player + " введите число от 1 до 3:");
             int select = Integer.parseInt(input.nextLine());
             if (select < 1 && select > 3) {
