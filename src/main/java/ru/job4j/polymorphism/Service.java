@@ -14,7 +14,7 @@ public class Service {
     }
 
     public static void main(String[] args) {
-        /*MemoryStore store = new MemoryStore();*/
+        //MemoryStore store = new MemoryStore();
         FileStore store = new FileStore();
         Service service = new Service(store);
         service.add();
