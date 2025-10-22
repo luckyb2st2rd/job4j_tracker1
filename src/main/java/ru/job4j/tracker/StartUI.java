@@ -28,7 +28,7 @@ public class StartUI {
                 }
             } else if (select == 2) {
                 System.out.println("=== Редактирование заявоки ===");
-                System.out.println("Введите id: ");
+                System.out.print("Введите id: ");
                 int id = Integer.parseInt(scanner.nextLine());
                 System.out.println("Введите имя: ");
                 String name = scanner.nextLine();
