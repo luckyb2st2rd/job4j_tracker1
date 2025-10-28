@@ -1,9 +1,8 @@
 package ru.job4j.oop;
 
 public class CarMain {
-
     public static void main(String[] args) {
-        Car car = new Car("BMW", "M2");
+       Car car = new Car();
         Car.Transmission transmission = car.new Transmission();
         Car.Brakes brakes = car.new Brakes();
         car.startEngine();
