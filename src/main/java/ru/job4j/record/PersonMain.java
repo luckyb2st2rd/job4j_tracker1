@@ -2,7 +2,7 @@ package ru.job4j.record;
 
 public class PersonMain {
     public static void main(String[] args) {
-        Person person = new Person("Artem",22);
+        Person person = new Person("Artem", 22);
         System.out.println("Name: " + person.getName() + ", Age: " + person.getAge());
         System.out.println(person);
         PersonRecord record = new PersonRecord("Artem", 22);
