@@ -106,11 +106,5 @@ public class StartUI {
         Input input = new ConsoleInput();
         Tracker tracker = new Tracker();
         new StartUI().init(input, tracker);
-        StartUI.createItem(input, tracker);
-        StartUI.findAllItems(tracker);
-        StartUI.replaceItem(input, tracker);
-        StartUI.deleteItem(input, tracker);
-        StartUI.findItemById(input, tracker);
-        StartUI.findItemByName(input, tracker);
     }
 }
