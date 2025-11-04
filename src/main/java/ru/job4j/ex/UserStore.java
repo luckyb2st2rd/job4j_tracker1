@@ -7,12 +7,12 @@ public class UserStore {
             if (login.equals(user.getUsername())) {
                 username = user;
             }
-
-            if (username == null) {
-                throw new UserNotFoundException("Users is not in system");
-            }
-
         }
+
+        if (username == null) {
+            throw new UserNotFoundException("Users is not in system");
+        }
+
         return username;
     }
 
