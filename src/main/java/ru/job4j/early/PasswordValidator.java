@@ -6,7 +6,7 @@ public class PasswordValidator {
     public static String validate(String password) {
         if (password == null) {
             throw new IllegalArgumentException(
-                    "Password can't be null"
+                "Password can't be null"
             );
         }
 
@@ -14,7 +14,7 @@ public class PasswordValidator {
 
         if (len < 8 || len > 32) {
             throw new IllegalArgumentException(
-                    "Password should be length [8, 32]"
+                "Password should be length [8, 32]"
             );
         }
 
@@ -22,7 +22,7 @@ public class PasswordValidator {
         for (String invalid : FORBIDDEN) {
             if (lower.contains(invalid)) {
                 throw new IllegalArgumentException(
-                        "Password shouldn't contain substrings: qwerty, 12345, password, admin, user"
+                    "Password shouldn't contain substrings: qwerty, 12345, password, admin, user"
                 );
             }
         }
@@ -46,22 +46,25 @@ public class PasswordValidator {
 
         if (!hasUpCase) {
             throw new IllegalArgumentException(
-                    "Password should contain at least one uppercase letter"
+                "Password should contain at least one uppercase letter"
             );
         }
+
         if (!hasLowCase) {
             throw new IllegalArgumentException(
-                    "Password should contain at least one lowercase letter"
+                "Password should contain at least one lowercase letter"
             );
         }
+
         if (!hasDigit) {
             throw new IllegalArgumentException(
-                    "Password should contain at least one figure"
+                "Password should contain at least one figure"
             );
         }
+
         if (!hasSpecial) {
             throw new IllegalArgumentException(
-                    "Password should contain at least one special symbol"
+                "Password should contain at least one special symbol"
             );
         }
 
